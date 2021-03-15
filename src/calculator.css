@@ -1,0 +1,130 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+html{
+   box-sizing: border-box;
+}
+body{
+   margin: 0;
+   font-size: 14px;
+   font-weight: 100;
+   font-family: 'Raleway', sans-serif;
+}
+#app{
+   min-height: 680px;
+   width: 100%;
+   background-size: cover;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow-y: hidden;
+
+}
+#wrapper{
+   display: flex;
+   width: 400px;
+   height: 600px;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 1em;
+   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30) , 0 15px 12px rgba(0, 0, 0, 0.22);
+   overflow: hidden;
+}
+#display{
+   height: 40%;
+   background-color:#1c191c;
+   width: 100%;
+   box-sizing: border-box;
+}
+#display_number{
+   height: 75%;
+   width: 100%;
+   font-size: 2.5em;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   padding: .5em;
+   box-sizing: border-box;
+   border-bottom: 1px solid rgba(150,150,150,.1);
+   word-wrap: break-word;
+}
+#display_function{
+   height: 25%;
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   box-sizing: border-box;
+   position: relative;
+}
+#display_function_context{
+   font-size: 1.25em;
+   padding: 0 1em;
+}
+#display_function_wrapper{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   background-color: black;
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   text-transform: uppercase;
+   box-sizing: border-box;
+   transition: .1s ease all;
+   opacity: 0;
+}
+#display_function_sys{
+   display: flex;
+   height: 100%;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+   box-sizing: border-box;
+   transition: .1s ease all;   
+}
+#display_function_sys:hover{
+   background-color: rgba(78, 11, 28,.7);
+}
+#display_function_wrapper:hover{
+   opacity: 1;
+}
+.button_row{
+   height: 15%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   background-color: rgba(0,0,0,.9);
+}
+.button_item{
+   width: 25%;
+   height: 100%;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5em;
+   box-sizing: border-box;
+   border:1px solid rgba(150,150,150,.1) ;
+   cursor: pointer;
+}
+.button_item:hover{
+   background:rgba(100,100,100,.1);
+}
+
+.double{
+   font-size: 3em;
+   background-color: rgba(0, 0, 0, 0.39);
+}
+.special{
+   background-color:rgba(78, 11, 28,.7) ;
+   
+}
+.special:hover{
+   background: rgb(78, 11, 28);
+}
+.dot{
+   font-size: 3em;
+}
